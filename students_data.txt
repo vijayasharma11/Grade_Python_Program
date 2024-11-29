@@ -1,0 +1,15 @@
+Duncan,59,75
+Grant,33,80
+Alistair,55,88
+Fergus,10,45
+Ivor,47,78
+Isobel,60,90
+Moyra,57,82
+Kirstin,45,65
+Shona,20,40
+Beitris,39,59
+Ainsley,55,75
+Islay,25,50
+Allan,23,48
+Niven,30,60
+Katriona,54,86
