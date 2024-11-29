@@ -28,8 +28,12 @@ def process_student(name, coursework_mark, prelim_mark):
 def process_all_students(names_file, mark1_file, mark2_file):
     with open(names_file, 'r') as nf, open(mark1_file, 'r') as m1f, open(mark2_file, 'r') as m2f:
         names = nf.readlines()
-        mark1 = list(map(int, m1f.readlines()))
-        mark2 = list(map(int, m2f.readlines()))
+        mark1 = m1f.readlines()
+        mark2 = m2f.readlines()
+
+        # Convert marks to integers using list comprehension
+        mark1 = [int(x.strip()) for x in mark1]
+        mark2 = [int(x.strip()) for x in mark2]
 
     grades = []
     percentages = []
@@ -71,5 +75,4 @@ if __name__ == "__main__":
     print(f"\nNumber of 'A' grades: {num_A_grades}")
     print(f"Best student: {best_student} with percentage: {best_percentage:.2f}%")
 
-    # Task 8: Explain fetch-execute cycle in program context
-    # This will be explained in the report.
+   
